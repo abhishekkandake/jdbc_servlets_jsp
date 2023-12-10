@@ -34,7 +34,7 @@ public class EmployeeController extends HttpServlet {
 		try {
 			int count=employeeCRUD.saveEmployee(employee);
 			if(count!=0) {
-				System.out.println("login to signup");
+				System.out.println("login to signup sucessfully");
 				RequestDispatcher requestDispatcher = req.getRequestDispatcher("Signup.jsp");
 				requestDispatcher.forward(req, resp);
 			}
